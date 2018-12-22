@@ -16,10 +16,11 @@ class CreateFacebookGroupsTable extends Migration
         Schema::create('facebook_groups', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('facebook_user_id')->unsigned();
-            $table->string('grouplink');
+            $table->string('group_link');
             $table->timestamps();
 
-            $table->foreign('facebook_user_id','fk_fbgroup_facebook_user_idx')
+            // Relationships
+            $table->foreign('facebook_user_id')
                     ->references('id')->on('facebook_users')
                     ->onDelete('cascade')
                     ->onUpdate('cascade');

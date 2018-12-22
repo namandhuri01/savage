@@ -2,6 +2,7 @@
 
 namespace App;
 
+use App\FacebookGroup;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Notifications\Notifiable;
 
@@ -27,7 +28,7 @@ class FacebookUser extends Model
         'password', 'remember_token',
     ];
 
-    public function facebookgroup()
+    public function facebook_group()
     {
         return $this->hasMany(FacebookGroup::class); 
     }

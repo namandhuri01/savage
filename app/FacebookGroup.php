@@ -2,6 +2,7 @@
 
 namespace App;
 
+use App\FacebookUser;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Notifications\Notifiable;
 
@@ -15,10 +16,10 @@ class FacebookGroup extends Model
      * @var array
      */
     protected $fillable = [
-        'facebook_user_id', 'grouplink',
+        'facebook_user_id', 'group_link',
     ];
 
-    public function facebookuser()
+    public function facebook_user()
 
     {
 
