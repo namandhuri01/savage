@@ -14,9 +14,9 @@ class DataRowsTableSeeder extends Seeder
     {
         
 
-        \DB::table('Data_Rows')->delete();
+        \DB::table('data_rows')->delete();
         
-        \DB::table('Data_Rows')->insert(array (
+        \DB::table('data_rows')->insert(array (
             0 => 
             array (
                 'id' => 1,
@@ -371,8 +371,8 @@ class DataRowsTableSeeder extends Seeder
             ),
             22 => 
             array (
-                'id' => 23,
-                'data_type_id' => 4,
+                'id' => 57,
+                'data_type_id' => 15,
                 'field' => 'id',
                 'type' => 'text',
                 'display_name' => 'Id',
@@ -387,8 +387,8 @@ class DataRowsTableSeeder extends Seeder
             ),
             23 => 
             array (
-                'id' => 24,
-                'data_type_id' => 4,
+                'id' => 58,
+                'data_type_id' => 15,
                 'field' => 'email',
                 'type' => 'text',
                 'display_name' => 'Email',
@@ -403,8 +403,8 @@ class DataRowsTableSeeder extends Seeder
             ),
             24 => 
             array (
-                'id' => 25,
-                'data_type_id' => 4,
+                'id' => 59,
+                'data_type_id' => 15,
                 'field' => 'password',
                 'type' => 'text',
                 'display_name' => 'Password',
@@ -419,8 +419,8 @@ class DataRowsTableSeeder extends Seeder
             ),
             25 => 
             array (
-                'id' => 26,
-                'data_type_id' => 4,
+                'id' => 60,
+                'data_type_id' => 15,
                 'field' => 'created_at',
                 'type' => 'timestamp',
                 'display_name' => 'Created At',
@@ -435,8 +435,8 @@ class DataRowsTableSeeder extends Seeder
             ),
             26 => 
             array (
-                'id' => 27,
-                'data_type_id' => 4,
+                'id' => 61,
+                'data_type_id' => 15,
                 'field' => 'updated_at',
                 'type' => 'timestamp',
                 'display_name' => 'Updated At',
@@ -451,8 +451,8 @@ class DataRowsTableSeeder extends Seeder
             ),
             27 => 
             array (
-                'id' => 28,
-                'data_type_id' => 5,
+                'id' => 62,
+                'data_type_id' => 16,
                 'field' => 'id',
                 'type' => 'text',
                 'display_name' => 'Id',
@@ -467,8 +467,8 @@ class DataRowsTableSeeder extends Seeder
             ),
             28 => 
             array (
-                'id' => 29,
-                'data_type_id' => 5,
+                'id' => 63,
+                'data_type_id' => 16,
                 'field' => 'facebook_user_id',
                 'type' => 'text',
                 'display_name' => 'Facebook User Id',
@@ -483,11 +483,11 @@ class DataRowsTableSeeder extends Seeder
             ),
             29 => 
             array (
-                'id' => 30,
-                'data_type_id' => 5,
-                'field' => 'grouplink',
+                'id' => 64,
+                'data_type_id' => 16,
+                'field' => 'group_link',
                 'type' => 'text',
-                'display_name' => 'Grouplink',
+                'display_name' => 'Group Link',
                 'required' => 1,
                 'browse' => 1,
                 'read' => 1,
@@ -499,8 +499,8 @@ class DataRowsTableSeeder extends Seeder
             ),
             30 => 
             array (
-                'id' => 31,
-                'data_type_id' => 5,
+                'id' => 65,
+                'data_type_id' => 16,
                 'field' => 'created_at',
                 'type' => 'timestamp',
                 'display_name' => 'Created At',
@@ -515,8 +515,8 @@ class DataRowsTableSeeder extends Seeder
             ),
             31 => 
             array (
-                'id' => 32,
-                'data_type_id' => 5,
+                'id' => 66,
+                'data_type_id' => 16,
                 'field' => 'updated_at',
                 'type' => 'timestamp',
                 'display_name' => 'Updated At',
@@ -531,40 +531,8 @@ class DataRowsTableSeeder extends Seeder
             ),
             32 => 
             array (
-                'id' => 33,
-                'data_type_id' => 4,
-                'field' => 'facebook_user_hasmany_facebook_group_relationship',
-                'type' => 'relationship',
-                'display_name' => 'facebook_groups',
-                'required' => 0,
-                'browse' => 1,
-                'read' => 1,
-                'edit' => 1,
-                'add' => 1,
-                'delete' => 1,
-                'details' => '{"model":"App\\\\FacebookGroup","table":"facebook_groups","type":"hasMany","column":"id","key":"id","label":"id","pivot_table":"data_rows","pivot":"0","taggable":null}',
-                'order' => 6,
-            ),
-            33 => 
-            array (
-                'id' => 34,
-                'data_type_id' => 5,
-                'field' => 'facebook_group_belongsto_facebook_user_relationship',
-                'type' => 'relationship',
-                'display_name' => 'facebook_users',
-                'required' => 0,
-                'browse' => 1,
-                'read' => 1,
-                'edit' => 1,
-                'add' => 1,
-                'delete' => 1,
-                'details' => '{"model":"App\\\\FacebookUser","table":"facebook_users","type":"belongsTo","column":"facebook_user_id","key":"id","label":"email","pivot_table":"data_rows","pivot":"0","taggable":null}',
-                'order' => 6,
-            ),
-            34 => 
-            array (
-                'id' => 50,
-                'data_type_id' => 10,
+                'id' => 67,
+                'data_type_id' => 17,
                 'field' => 'id',
                 'type' => 'text',
                 'display_name' => 'Id',
@@ -577,13 +545,45 @@ class DataRowsTableSeeder extends Seeder
                 'details' => '{}',
                 'order' => 1,
             ),
-            35 => 
+            33 => 
             array (
-                'id' => 51,
-                'data_type_id' => 10,
+                'id' => 68,
+                'data_type_id' => 17,
                 'field' => 'description',
                 'type' => 'text',
                 'display_name' => 'Description',
+                'required' => 1,
+                'browse' => 1,
+                'read' => 1,
+                'edit' => 1,
+                'add' => 1,
+                'delete' => 1,
+                'details' => '{}',
+                'order' => 3,
+            ),
+            34 => 
+            array (
+                'id' => 69,
+                'data_type_id' => 17,
+                'field' => 'src',
+                'type' => 'image',
+                'display_name' => 'Src',
+                'required' => 1,
+                'browse' => 1,
+                'read' => 1,
+                'edit' => 1,
+                'add' => 1,
+                'delete' => 1,
+                'details' => '{}',
+                'order' => 4,
+            ),
+            35 => 
+            array (
+                'id' => 70,
+                'data_type_id' => 17,
+                'field' => 'user_id',
+                'type' => 'text',
+                'display_name' => 'User Id',
                 'required' => 1,
                 'browse' => 1,
                 'read' => 1,
@@ -595,24 +595,8 @@ class DataRowsTableSeeder extends Seeder
             ),
             36 => 
             array (
-                'id' => 52,
-                'data_type_id' => 10,
-                'field' => 'src',
-                'type' => 'image',
-                'display_name' => 'Src',
-                'required' => 1,
-                'browse' => 1,
-                'read' => 1,
-                'edit' => 1,
-                'add' => 1,
-                'delete' => 1,
-                'details' => '{}',
-                'order' => 3,
-            ),
-            37 => 
-            array (
-                'id' => 53,
-                'data_type_id' => 10,
+                'id' => 71,
+                'data_type_id' => 17,
                 'field' => 'created_at',
                 'type' => 'timestamp',
                 'display_name' => 'Created At',
@@ -623,12 +607,12 @@ class DataRowsTableSeeder extends Seeder
                 'add' => 0,
                 'delete' => 1,
                 'details' => '{}',
-                'order' => 4,
+                'order' => 5,
             ),
-            38 => 
+            37 => 
             array (
-                'id' => 54,
-                'data_type_id' => 10,
+                'id' => 72,
+                'data_type_id' => 17,
                 'field' => 'updated_at',
                 'type' => 'timestamp',
                 'display_name' => 'Updated At',
@@ -639,7 +623,71 @@ class DataRowsTableSeeder extends Seeder
                 'add' => 0,
                 'delete' => 0,
                 'details' => '{}',
-                'order' => 5,
+                'order' => 6,
+            ),
+            38 => 
+            array (
+                'id' => 73,
+                'data_type_id' => 15,
+                'field' => 'facebook_user_hasmany_facebook_group_relationship',
+                'type' => 'relationship',
+                'display_name' => 'facebook_groups',
+                'required' => 0,
+                'browse' => 1,
+                'read' => 1,
+                'edit' => 1,
+                'add' => 1,
+                'delete' => 1,
+                'details' => '{"model":"App\\\\FacebookGroup","table":"facebook_groups","type":"hasMany","column":"id","key":"id","label":"id","pivot_table":"data_rows","pivot":"0","taggable":null}',
+                'order' => 6,
+            ),
+            39 => 
+            array (
+                'id' => 74,
+                'data_type_id' => 15,
+                'field' => 'facebook_user_hasmany_post_relationship',
+                'type' => 'relationship',
+                'display_name' => 'posts',
+                'required' => 0,
+                'browse' => 1,
+                'read' => 1,
+                'edit' => 1,
+                'add' => 1,
+                'delete' => 1,
+                'details' => '{"model":"App\\\\Post","table":"posts","type":"hasMany","column":"id","key":"id","label":"id","pivot_table":"data_rows","pivot":"0","taggable":null}',
+                'order' => 7,
+            ),
+            40 => 
+            array (
+                'id' => 75,
+                'data_type_id' => 16,
+                'field' => 'facebook_group_belongsto_facebook_user_relationship',
+                'type' => 'relationship',
+                'display_name' => 'facebook_users',
+                'required' => 0,
+                'browse' => 1,
+                'read' => 1,
+                'edit' => 1,
+                'add' => 1,
+                'delete' => 1,
+                'details' => '{"model":"App\\\\FacebookUser","table":"facebook_users","type":"belongsTo","column":"facebook_user_id","key":"id","label":"email","pivot_table":"data_rows","pivot":"0","taggable":null}',
+                'order' => 6,
+            ),
+            41 => 
+            array (
+                'id' => 76,
+                'data_type_id' => 17,
+                'field' => 'post_belongsto_user_relationship',
+                'type' => 'relationship',
+                'display_name' => 'users',
+                'required' => 0,
+                'browse' => 1,
+                'read' => 1,
+                'edit' => 1,
+                'add' => 1,
+                'delete' => 1,
+                'details' => '{"model":"App\\\\User","table":"users","type":"belongsTo","column":"user_id","key":"id","label":"email","pivot_table":"data_rows","pivot":"0","taggable":"0"}',
+                'order' => 7,
             ),
         ));
         

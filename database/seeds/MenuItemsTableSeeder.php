@@ -14,9 +14,9 @@ class MenuItemsTableSeeder extends Seeder
     {
         
 
-        \DB::table('Menu_Items')->delete();
+        \DB::table('menu_items')->delete();
         
-        \DB::table('Menu_Items')->insert(array (
+        \DB::table('menu_items')->insert(array (
             0 => 
             array (
                 'id' => 1,

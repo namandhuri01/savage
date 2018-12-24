@@ -14,9 +14,9 @@ class DataTypesTableSeeder extends Seeder
     {
         
 
-        \DB::table('Data_Types')->delete();
+        \DB::table('data_types')->delete();
         
-        \DB::table('Data_Types')->insert(array (
+        \DB::table('data_types')->insert(array (
             0 => 
             array (
                 'id' => 1,
@@ -73,7 +73,7 @@ class DataTypesTableSeeder extends Seeder
             ),
             3 => 
             array (
-                'id' => 4,
+                'id' => 15,
                 'name' => 'facebook_users',
                 'slug' => 'facebook-users',
                 'display_name_singular' => 'Facebook User',
@@ -86,12 +86,12 @@ class DataTypesTableSeeder extends Seeder
                 'generate_permissions' => 1,
                 'server_side' => 0,
                 'details' => '{"order_column":null,"order_display_column":null}',
-                'created_at' => '2018-12-21 06:32:46',
-                'updated_at' => '2018-12-21 06:32:46',
+                'created_at' => '2018-12-24 12:38:47',
+                'updated_at' => '2018-12-24 12:38:47',
             ),
             4 => 
             array (
-                'id' => 5,
+                'id' => 16,
                 'name' => 'facebook_groups',
                 'slug' => 'facebook-groups',
                 'display_name_singular' => 'Facebook Group',
@@ -104,12 +104,12 @@ class DataTypesTableSeeder extends Seeder
                 'generate_permissions' => 1,
                 'server_side' => 0,
                 'details' => '{"order_column":null,"order_display_column":null}',
-                'created_at' => '2018-12-21 06:32:54',
-                'updated_at' => '2018-12-21 06:32:54',
+                'created_at' => '2018-12-24 12:39:00',
+                'updated_at' => '2018-12-24 12:39:00',
             ),
             5 => 
             array (
-                'id' => 10,
+                'id' => 17,
                 'name' => 'posts',
                 'slug' => 'facebook-posts',
                 'display_name_singular' => 'Post',
@@ -122,8 +122,8 @@ class DataTypesTableSeeder extends Seeder
                 'generate_permissions' => 1,
                 'server_side' => 0,
                 'details' => '{"order_column":null,"order_display_column":null}',
-                'created_at' => '2018-12-21 07:48:17',
-                'updated_at' => '2018-12-21 07:54:13',
+                'created_at' => '2018-12-24 12:39:09',
+                'updated_at' => '2018-12-24 12:48:36',
             ),
         ));
         
