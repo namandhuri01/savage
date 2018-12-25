@@ -25,7 +25,7 @@ class UsersTableSeeder extends Seeder
                 'email' => 'admin@sifars.com',
                 'avatar' => 'users\\December2018\\LaRCWyZgXQL3k5OBwgki.png',
                 'password' => '$2y$10$R/d40hYbTmEuc6W5zCjiyOFVm3sOYbhjoRZ/N1dZFdgiAJP5EwRBq',
-                'remember_token' => 'R8epwPoIMysdz5HKzzVI6KPaZVuaL8Mtg4e3HNpFaGHOjY51cLqo49spufJk',
+                'remember_token' => 'YetLmbkJiG47eVm8kLkdQmJFXqNd9k6kQC5C5ZgyW8ae8uTiqBqW0c0Ft8IY',
                 'settings' => '{"locale":"en"}',
                 'created_at' => '2018-12-21 06:32:06',
                 'updated_at' => '2018-12-21 12:22:44',
@@ -55,6 +55,19 @@ class UsersTableSeeder extends Seeder
                 'settings' => '{"locale":"en"}',
                 'created_at' => '2018-12-21 12:46:40',
                 'updated_at' => '2018-12-21 12:47:55',
+            ),
+            3 => 
+            array (
+                'id' => 4,
+                'role_id' => 1,
+                'name' => 'naman',
+                'email' => 'naman@email.com',
+                'avatar' => 'users/default.png',
+                'password' => '$2y$10$aBabT2s00voL1HG0/uMrauVw8qzx2VgHjdujfCr9Y3I9dvQFQrGVW',
+                'remember_token' => NULL,
+                'settings' => NULL,
+                'created_at' => '2018-12-25 04:28:31',
+                'updated_at' => '2018-12-25 04:28:31',
             ),
         ));
         
